@@ -11,7 +11,7 @@
 
 ### 应用
 
-![2017](https://raw.githubusercontent.com/alvinx31/house/master/resource/train2016-2030.jpg "点击大图")
+![2017](resource/2017.png "2017")
 
 
 ### 相关资源
