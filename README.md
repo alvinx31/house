@@ -11,6 +11,6 @@
 
 ### 应用
 
-![2017](resource/2017.PNG "2017")
+![2017](resource/2017.png "2017")
 
 [snapshot]: http://www.30daydo.com/uploads/article/20161012/a174e3e3ea03c9c2f275c2c05ea83dd3.PNG
