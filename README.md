@@ -15,7 +15,7 @@
 
 
 ### 相关资源
-详见[《深圳市轨道交通线网规划(2016-2030)》](http://www.szpl.gov.cn/xxgk/tzgg/csghgg/201612/t20161228_349192.htm) 2016-12-29	
+详见[《深圳市轨道交通线网规划(2016-2030)》](http://www.szpl.gov.cn/xxgk/tzgg/csghgg/201612/t20161228_349192.htm)方案说明 2016-12-29	
 ![train2016](https://raw.githubusercontent.com/alvinx31/house/master/resource/train2016-2030.jpg "点击看大图")
 
 
