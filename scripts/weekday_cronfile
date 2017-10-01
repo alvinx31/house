@@ -1,0 +1,2 @@
+# 每天23:35抓取深圳国土局二手房交易数据。请保证电脑唤醒状态。
+35 23 * * * cd /Users/$USER/GitHub/house/; python main.py
