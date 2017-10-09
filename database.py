@@ -18,6 +18,15 @@ def create_table():
         '''
         # 主要就是上面的语句
         conn.execute(create_tb_cmd)
+
+        create_month_tb_cmd = '''
+        CREATE TABLE IF NOT EXISTS MONTH_HOUSE
+        ('日期' TEXT,
+        '二手房总套数' TEXT,
+        unique ('日期')
+        );
+        '''
+        conn.execute(create_month_tb_cmd)
     except:
         print "Create table failed."
         return False
@@ -27,7 +36,7 @@ def create_table():
     return True
 
 
-def insert(date, one_hand, one_area, second_hand, second_area):
+def insert(date, one_hand, one_area, second_hand, second_area, month='', total_house=''):
     conn = sqlite3.connect('shenzhen_house.db')
     print "open database passed"
 
@@ -48,7 +57,14 @@ def insert(date, one_hand, one_area, second_hand, second_area):
     except:
         print "Record %s already exist." % date
         return False
-
     conn.commit()
+
+    cmd = "INSERT INTO MONTH_HOUSE('日期', '二手房总套数') VALUES('%s', '%s');" % (month, total_house)
+    try:
+        conn.execute(cmd)
+    except:
+        print "Month Record %s already exist." % date        
+    conn.commit()
+
     conn.close()
     return True
