@@ -38,4 +38,9 @@ def getContent():
     database.create_table()
     database.insert(current_date[0],result[0],yishou_area[0],sec_result[1],second_area[2])
 
+    month=re.compile(r'<SPAN class=titleblue><span id=\"ctl00_ContentPlaceHolder1_lblCurTime2\">([^<]*)</span>')
+    last_month = month.findall(sec_content)
+    print '上月：%s'  % last_month[0]
+    print '整月二手商品房成交套数：%s'  % sec_result[5]
+
 getContent()
