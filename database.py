@@ -63,7 +63,7 @@ def insert(date, one_hand, one_area, second_hand, second_area, month='', total_h
     try:
         conn.execute(cmd)
     except:
-        print "Month Record %s already exist." % date        
+        print "Month Record %s already exist." % month        
     conn.commit()
 
     conn.close()
